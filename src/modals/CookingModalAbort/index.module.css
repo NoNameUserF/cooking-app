@@ -1,0 +1,37 @@
+.modalAbortText {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.modalAbortTextRemainingSteps {
+    color: var(--color-main-text);
+}
+
+.backToCook {
+    width: 240px;
+}
+
+.abortProcess,
+.backToCook {
+    flex: 1;
+}
+
+.modalAbortMainText {
+    font-size: 16px;
+}
+
+@media (width <= 1024px) {
+    .modalAbortText {
+        margin-top: 16px;
+    }
+
+    .modalAbortMainText {
+        font-size: 14px;
+    }
+
+    .abortProcess,
+    .backToCook {
+        flex: unset;
+        width: 100%;
+    }
+}

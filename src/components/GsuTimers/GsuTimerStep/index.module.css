@@ -1,0 +1,70 @@
+.recipePaginationValue {
+    user-select: none;
+    transform: translate(18px, 23px);
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.circleTimer {
+    animation-name: countdown;
+    stroke-dasharray: 100.5309;
+    stroke-dashoffset: 100.5309;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+.iconSvg {
+    width: 36px;
+    height: 36px;
+}
+
+.iconSvg > circle {
+    cx: 18px;
+    cy: 18px;
+    r: 16px;
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 100.5309;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (width <= 1024px) {
+    .iconSvg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .iconSvg > circle {
+        cx: 16px;
+        cy: 16px;
+        r: 14px;
+    }
+
+    .circleTimer {
+        stroke-dasharray: 87.9645;
+        stroke-dashoffset: 87.9645;
+    }
+
+    .recipePaginationValue {
+        transform: translate(16px, 20px);
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    @keyframes countdown {
+        from {
+            stroke-dashoffset: 87.9645;
+        }
+
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.itemsWithIngredients {
+    display: flex;
+    gap: 16px;
+}
+
+.container {
+    flex: 1;
+}
+
+@media (width <= 1024px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .itemsWithIngredients {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

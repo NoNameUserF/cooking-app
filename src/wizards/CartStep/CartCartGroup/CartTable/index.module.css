@@ -1,0 +1,10 @@
+.cardsContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.actionsBlock {
+    display: flex;
+    justify-content: flex-end;
+}

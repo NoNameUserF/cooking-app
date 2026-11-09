@@ -1,0 +1,67 @@
+:root {
+    --color-default-theme: #fff;
+    --color-secondary-theme: #f8f8f8;
+    --color-active: #838383;
+    --color-tile-border: #e5e5e5;
+    --color-separator: #e5e5e5;
+
+    /* CORE */
+    --color-default-background: #fff;
+    --color-transparent: rgb(0 0 0 / 0%);
+    --color-primary: #ffa912;
+    --color-primary-hover: #ffc64a;
+    --color-disabled: #dfdfdf;
+    --color-secondary: #0c0c0c;
+    --color-secondary-semitransparent: #0c0c0cb2;
+    --color-secondary-hover: #606060;
+    --color-text-disabled: #a6a6a6;
+    --color-privacy-policy: #606060;
+    --color-copyright: #a6a6a6;
+    --color-error: #e51c00;
+    --color-success: #2fa933;
+    --color-error-hover: #ef4e37;
+    --color-main-text: #0c0c0c;
+    --color-secondary-text: #606060;
+    --color-input-placeholder-text: #838383;
+    --color-secondary-description-text: #333;
+    --color-main-wizard-five-part-saturation: rgb(255 255 255 / 20%);
+    --color-stepper-background: #ffcd90;
+    --color-actions-background: #f8f8f8;
+    --color-tooltip-main: #fffae6;
+    --color-tooltip-box-shadow: rgb(12 12 12 / 8%);
+    --color-anti-flash-white: #f3f3f3;
+    --color-primary-background: #fffae6;
+    --color-main-border: #cecece;
+    --color-radio-button-border: #aaa;
+    --color-description-text: #909090;
+    --color-svg-path: #909090;
+    --color-stepper-color: #7a7a8a;
+    --color-stepper-fill-primary: #fd8c28;
+    --color-stepper-fill-secondary: #ffa454;
+    --color-button-count-disabled: #f1f1f1;
+    --color-secondary-wizard: #000;
+    --color-effect-state-half-saturation: #03020aa3;
+    --color-checkbox-shadow-hover: rgb(0 0 0 / 10%);
+    --color-checkbox-shadow-active: rgb(0 0 0 / 20%);
+    --color-checkbox-shadow-active-fifty: #cbcbcb80;
+    --color-alert-background: #333;
+    --color-boxshadow: rgb(0 0 0 / 5%);
+    --color-icon-stroke-hover: #0c0c0c;
+    --color-background-main-block: #fafafa;
+    --color-timebox-background: rgb(12 12 12 / 56%);
+
+    /* COOKING */
+    --color-warning-note: #fffae6;
+    --color-grid-background: #f5f4f7;
+    --color-grey-background: #f9f9f9;
+    --color-recipe-step-border: #dfdfdf;
+    --color-focus-recipe-step-border: #0c0c0c;
+    --color-back-steps: #a6a6a6;
+    --color-next-steps: #0c0c0c;
+    --color-selector-scrollbar-thumb: #67667a;
+    --color-stylefield-text-active: #70695e;
+    --color-main-dishes-text: #6c614f;
+    --color-input-text: #838383;
+    --color-background-close-button: rgb(12 12 12 / 70%);
+    --color-background-clock: rgb(12 12 12 / 56%);
+}

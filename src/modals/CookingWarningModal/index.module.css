@@ -1,0 +1,67 @@
+.modalWarningMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.displayModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalWarningText {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.modalWarningItem {
+    display: flex;
+    background-color: var(--color-anti-flash-white);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 16px 0 12px;
+    height: 56px;
+}
+
+.modalWarningImage {
+    background-color: var(--color-default-background);
+    width: 32px;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalWarningProduct {
+    flex: 1;
+    margin-left: 10px;
+    color: var(--color-secondary);
+}
+
+.undoButton,
+.continueButton {
+    flex: 1;
+}
+
+@media (width <= 1024px) {
+    .undoButton,
+    .continueButton {
+        width: 100%;
+        flex: unset;
+    }
+
+    .modalWarningItem {
+        height: 56px;
+    }
+
+    .continueButton {
+        margin-left: 0;
+    }
+}

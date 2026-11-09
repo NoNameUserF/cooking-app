@@ -1,0 +1,23 @@
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    row-gap: 24px;
+}
+
+.productIngredientsWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+@media (width <= 1024px) {
+    .productsContainer {
+        row-gap: 16px;
+    }
+
+    .productIngredientsWrapper {
+        padding: 16px;
+    }
+}

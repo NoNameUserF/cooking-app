@@ -1,0 +1,27 @@
+.iconStyle path {
+    transition: fill 0.2s;
+}
+
+.iconStyle {
+    height: 40px;
+    width: 40px;
+}
+
+@media (hover: hover) {
+    .iconStyle:hover path {
+        fill: var(--color-secondary-hover);
+    }
+}
+
+@media (hover: none) {
+    .iconStyle:active path {
+        fill: var(--color-secondary-hover);
+    }
+}
+
+@media (width <= 1024px) {
+    .iconStyle {
+        height: 32px;
+        width: 32px;
+    }
+}

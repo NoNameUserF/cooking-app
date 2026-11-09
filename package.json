@@ -1,0 +1,76 @@
+{
+    "name": "app",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "@gsu-ai/gsu-ui-core": "13.4.3",
+        "@vitejs/plugin-react": "^4.3.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "scripts": {
+        "copy-static": "rimraf public/core && copyfiles -u 4 node_modules/@gsu-ai/gsu-ui-core/dist/core/**/* public/",
+        "ssg": "npm run copy-static && vite-react-ssg dev",
+        "start": "npm run copy-static && vite dev",
+        "build": "npm run copy-static && vite-react-ssg build",
+        "serve": "npm run copy-static && vite preview",
+        "lint": "eslint ./src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "lint:css": "stylelint **/*.css --fix",
+        "lint:fix": "eslint ./src --ext ts,tsx --fix",
+        "css:unused": "node scripts/find-unused-css.mjs",
+        "files:unused": "node scripts/find-unused-files.mjs",
+        "check:kebab" : "node scripts/checking-kebab-case-naming.mjs",
+        "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc && npm run lint:fix && npm run check:kebab",
+        "check": "npm run lint && npm run lint:css && npm run css:unused && npm run files:unused",
+        "init": "git add ."
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.10",
+        "@types/react": "^18.3.18",
+        "@types/react-dom": "^18.3.5",
+        "@typescript-eslint/eslint-plugin": "^8.40.0",
+        "@typescript-eslint/parser": "^8.40.0",
+        "copyfiles": "^2.4.1",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jsx-a11y": "^6.9.0",
+        "eslint-plugin-prettier": "^5.5.4",
+        "eslint-plugin-react": "^7.34.2",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "eslint-plugin-sonarjs": "^1.0.4",
+        "fast-glob": "^3.3.3",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.5.6",
+        "postcss-selector-parser": "^7.1.0",
+        "prettier": "^3.6.2",
+        "rimraf": "^6.0.1",
+        "stylelint": "^16.23.1",
+        "stylelint-config-standard": "^39.0.0",
+        "typescript": "^5.7.3",
+        "vite": "^5.4.14",
+        "vite-plugin-dts": "^4.5.0",
+        "vite-react-ssg": "^0.8.9",
+        "react-router-dom": "^6.30.1"
+    }
+}

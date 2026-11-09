@@ -1,0 +1,34 @@
+.displayModalEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modalEmptyText {
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-main-text);
+    margin-top: 24px;
+    max-width: 100%;
+}
+
+.modalEmptyHelper {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.modalEmptyButton {
+    width: 100%;
+}
+
+.warningIcon {
+    width: 56px;
+    height: 56px;
+}
+
+.warningIcon img {
+    width: 56px;
+    height: 56px;
+}

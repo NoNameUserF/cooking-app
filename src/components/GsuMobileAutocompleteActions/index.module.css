@@ -1,0 +1,30 @@
+.mobileAutocompleteOpenWrapper {
+    width: 100%;
+    display: none;
+}
+
+.mobileAddProductAction {
+    height: 44px;
+    flex: 1;
+}
+
+.iconWrapper {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileOpenPhotoIcon {
+    width: 52px;
+    height: 44px;
+    margin-left: 12px;
+    padding-inline: 16px;
+}
+
+@media (width <= 1024px) {
+    .mobileAutocompleteOpenWrapper {
+        display: flex;
+    }
+}

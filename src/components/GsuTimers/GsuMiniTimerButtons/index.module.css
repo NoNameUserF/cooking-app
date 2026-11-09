@@ -1,0 +1,38 @@
+.miniTimerText {
+    display: block;
+    width: 100%;
+    white-space: break-spaces;
+    overflow-wrap: break-word;
+    margin-bottom: 12px;
+    color: var(--color-main-text);
+}
+
+.miniTimerButtons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.miniTimerButton {
+    width: 146px;
+    height: 40px;
+}
+
+@media (width <= 1024px) {
+    .miniTimerButton {
+        width: 148px;
+        height: 44px;
+    }
+}
+
+@media (width < 360px) {
+    .miniTimerButtons {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .miniTimerButton {
+        width: 100%;
+    }
+}

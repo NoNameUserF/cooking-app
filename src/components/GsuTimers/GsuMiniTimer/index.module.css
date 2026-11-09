@@ -1,0 +1,23 @@
+.miniTimerTooltipContainer {
+    position: relative;
+}
+
+.miniTimerTime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    min-width: 88px;
+    width: 100%;
+    gap: 8px;
+}
+
+.miniTimerTimeValue {
+    line-height: 150%;
+}
+
+@media (width <= 560px) {
+    .miniTimerTooltipContainer {
+        position: static;
+    }
+}

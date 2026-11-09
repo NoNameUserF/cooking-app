@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Глобальные OG/Twitter (общая картинка) -->
+    <meta property="og:site_name" content="Cooking AI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:image" content="https://cooking.alivio.ai/icons/favicon/android-chrome-512x512.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Логотип Cooking AI" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://cooking.alivio.ai/icons/favicon/android-chrome-512x512.png" />
+
+    <!-- VERIFICATION -->
+    <meta name="google-site-verification" content="kZiCRx3KGpHTS89xeIWLQGJlqB8KRgDBmqxc2fD7Yfk" />
+    <meta name="msvalidate.01" content="A0C1617536B4919FEDD45797AA840F96" />
+    <meta name="yandex-verification" content="e57f375f90b51d86" />
+
+    <!-- Иконки / PWA -->
+    <link rel="icon" href="/icons/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/icons/favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/core/font/fonts.css">
+
+    <!-- CSP: лучше вынести на сервер (заголовки). Если оставляешь — ок. -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- JSON-LD (Organization + WebSite + WebApplication) -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Cooking AI",
+            "url":"https://cooking.alivio.ai/",
+            "logo":"https://cooking.alivio.ai/icons/favicon/android-chrome-512x512.png"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "url":"https://cooking.alivio.ai/",
+            "name":"Cooking AI"
+        }
+    </script>
+</head>
+
+<body>
+<div id="root"></div>
+<script type="module" src="src/root/index.tsx"></script>
+</body>
+</html>

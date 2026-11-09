@@ -1,0 +1,83 @@
+.headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardImgContainer {
+    position: relative;
+    width: 100%;
+}
+
+.cardTimeGroup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background: var(--color-timebox-background);
+    color: var(--color-default-theme);
+}
+
+.cardTime {
+    color: var(--color-default-theme);
+    margin-left: 8px;
+}
+
+.cardTitle {
+    color: var(--color-main-text);
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 16px;
+    margin-top: 16px;
+    opacity: 0.8;
+}
+
+.cardDescription {
+    margin-bottom: 16px;
+    color: var(--color-secondary-text);
+    cursor: pointer;
+    line-height: 16px;
+    opacity: 0.8;
+}
+
+.cardProductBlock {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    flex-grow: 1;
+}
+
+.cardProduct {
+    line-height: 150%;
+    text-align: left;
+}
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.productItem {
+    line-height: 16px;
+}
+
+@media (width <= 1024px) {
+    .cardTitle {
+        line-height: 150%;
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+
+    .cardDescription {
+        margin-bottom: 8px;
+    }
+
+    .cardProductBlock {
+        flex-grow: 0;
+    }
+}

@@ -1,0 +1,15 @@
+.cartResultContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+@media (width <= 1024px) {
+    .cartResultContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 8px;
+    }
+}

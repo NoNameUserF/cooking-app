@@ -1,0 +1,155 @@
+.recipeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.recipeContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 680px;
+}
+
+.recipeContentInner {
+    padding: 24px;
+    gap: 24px;
+}
+
+.arrowLeft,
+.arrowRight {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.arrowRight {
+    justify-content: start;
+}
+
+.arrowLeft {
+    justify-content: end;
+}
+
+.arrowLeft:disabled,
+.arrowRight:disabled {
+    pointer-events: none !important;
+}
+
+.arrowWithTimer {
+    cursor: pointer;
+    border: none;
+}
+
+.arrowWithTimer:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    border: none;
+}
+
+.recipeStepContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.recipeStep {
+    line-height: 125%;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.recipeItems {
+    display: flex;
+    align-items: center;
+}
+
+.recipeItemsDescription {
+    text-align: center;
+    margin-left: 12px;
+    line-height: 150%;
+    color: var(--color-secondary-text);
+}
+
+.recipeHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miniTimerParentElement {
+    width: 100%;
+    display: flex;
+    gap: 8px 24px;
+    flex-wrap: wrap;
+}
+
+.cookingStepContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cookingStepMiniTimerComponent {
+    display: flex;
+    column-gap: 20px;
+}
+
+@media (width >= 1025px) {
+    .arrowWrapper:hover {
+        opacity: 0.6;
+    }
+}
+
+@media (width <= 1024px) {
+    .recipeContentInner {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .arrowLeft,
+    .arrowRight {
+        padding: 16px 8px;
+    }
+
+    .arrowLeft img,
+    .arrowRight img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .arrowWrapper:active {
+        opacity: 0.6;
+    }
+
+    .recipeItems img {
+        max-height: 20px;
+    }
+
+    .recipeItemsDescription {
+        margin-left: 8px;
+    }
+
+    .recipeStep {
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .recipeStepContainer {
+        margin-top: 16px;
+    }
+}

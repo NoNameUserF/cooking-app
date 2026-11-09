@@ -1,0 +1,59 @@
+.recipePagination {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 48px;
+    max-width: 404px;
+    flex-wrap: wrap;
+}
+
+.ellipsis {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 36px;
+    width: 12px;
+    color: var(--color-secondary-wizard);
+}
+
+.timerStepContainer {
+    opacity: 0.8;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+}
+
+.timerStepContainer:hover {
+    opacity: 1;
+}
+
+.timerStepContainer:active {
+    opacity: 1;
+}
+
+@media (width <= 1024px) {
+    .recipePagination {
+        margin-top: 32px;
+        height: 32px;
+    }
+
+    .timerStepContainer {
+        height: 32px;
+        width: 32px;
+    }
+
+    .ellipsis {
+        height: 32px;
+    }
+}
+
+@media (width <= 560px) {
+    .recipePagination {
+        column-gap: 6px;
+    }
+}
+
+@media (width < 360px) {
+    .recipePagination {
+        column-gap: 4px;
+    }
+}
